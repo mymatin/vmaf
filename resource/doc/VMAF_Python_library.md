@@ -52,6 +52,37 @@ Make sure your user install executable directory is on your PATH. Add this to th
 export PATH="$PATH:$HOME/.local/bin"
 ```
 
+#### Linux (CentOS)
+
+Install the dependencies:
+
+```
+sudo yum -y install epel-release
+sudo yum update -y
+sudo yum install -y \
+  pkgconfig gcc-gfortran hdf5-devel freetype-devel lapack-devel \
+  python python-setuptools python-devel python-pip tkinter
+```
+
+Upgrade `pip` to the newest version:
+
+```
+sudo pip install --upgrade pip
+sudo pip install pip-update
+```
+
+Then install the required Python packages:
+
+```
+pip install --user numpy scipy matplotlib pandas scikit-learn scikit-image h5py
+```
+
+Make sure your user install executable directory is on your PATH. Run this command add PATH to the end of `~/.bashrc` and restart your shell with `source ~/.bashrc` :
+
+```
+echo export PATH="$PATH:$HOME/.local/bin" >> ~/.bashrc
+```
+
 #### macOS
 
 First, install [Homebrew](https://brew.sh), then install the dependencies:
