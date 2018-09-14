@@ -77,7 +77,7 @@ Then install the required Python packages:
 pip install --user numpy scipy matplotlib pandas scikit-learn scikit-image h5py
 ```
 
-Make sure your user install executable directory is on your PATH. Run this command add PATH to the end of `~/.bashrc` and restart your shell with `source ~/.bashrc` :
+Make sure your user install executable directory is on your PATH. Run this command to add to the end of `~/.bashrc` and restart your shell with `source ~/.bashrc` :
 
 ```
 echo export PATH="$PATH:$HOME/.local/bin" >> ~/.bashrc
